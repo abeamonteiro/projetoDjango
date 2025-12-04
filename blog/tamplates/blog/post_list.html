@@ -1,0 +1,25 @@
+<!-- <html>
+    <body>
+        <p>Ola Mundo!</p>
+    </body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,
+        initial-scale=1.0">
+        <title>Blog de Teste</title>
+<body>
+    <header>
+        <h1>Blog de Teste</h1>
+    </header>
+    {% for post in post_list %}
+        <article>
+            <time>Publiado em: {{post.published_date}}</time>
+            <h2><a href="">{{post.tile}}</a></h2>
+            <p>{{post.text}}</p>
+        </article>
+        {% endfor %}
+</body>
+</html>
